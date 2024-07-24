@@ -11,6 +11,94 @@ body {
   line-height: 1.6;
 }
 
+/* Hero Section*/
+.hero {
+  display: flex;
+  justify-content: space-around; /* adds same space around boxes */
+  align-items: stretch; /* both boxes have same height */
+  background-color: #c4c4c4; /* Grey background */
+  padding: 4rem 1rem; /* Space around the content (top and bottom padding increased for spacing) */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.hero1 {
+  display: flex;
+  flex-direction: column; /*arrange items in column*/
+  justify-content: space-between; /* Distribute space evenly between items */
+  background-color: #ececec;
+  padding: 1rem;
+  flex: 1; /*allow box to grow and shrink*/
+  margin: 0 1rem; /*space between hero1 and hero2*/
+  min-width: 15rem; /* Minimum width */
+  max-width: 25rem; /* Maximum width */
+  min-height: 12rem; /* Minimum height */
+  max-height: 22rem; /* Maximum height */
+}
+
+.h1p1 {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.h1p2 {
+  font-size: xx-large;
+  white-space: nowrap;
+  /*margin-top: 2rem;*/
+}
+
+.h1p3 {
+  /*margin-bottom: 4rem;*/
+}
+
+.hero2 {
+  display: flex;
+  flex-direction: column; /*arrange items in column*/
+  justify-content: end; /* Distribute space evenly between items */
+  background-color: #ececec;
+  padding: 1rem;
+  border-radius: 35px;
+  flex: 1; /*allow box to grow and shrink*/
+  margin: 0 1rem; /*space between hero1 and hero2*/
+  min-width: 15rem; /* Minimum width */
+  max-width: 11rem; /* Maximum width */
+  min-height: 11rem; /* Minimum height */
+  max-height: 22rem; /* Maximum height */
+}
+
+.h2p1 {
+  margin-top: 10rem;
+  white-space: nowrap;
+  font-size: x-large;
+}
+
+.h2p2 {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center; /* Center boxes horizontally */
+  }
+
+  .hero1,
+  .hero2 {
+    width: 80%; /* Adjust width to fit on smaller screens */
+    max-width: none; /* Remove max-width constraint */
+    margin: 1rem 0; /* Add vertical margin to create space between stacked boxes */
+    min-height: 11rem; /* Adjust min-height for smaller screens if needed */
+    max-height: none; /* Remove max-height constraint */
+  }
+  .hero2 {
+    max-width: 25rem; /* Maximum width */
+  }
+}
+
 /* Header Styles */
 .header {
   /* width: 1440px; */
