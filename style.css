@@ -25,6 +25,7 @@ body {
   display: flex;
   flex-direction: column; /*arrange items in column*/
   justify-content: space-between; /* Distribute space evenly between items */
+  align-items: start;
   background-color: #ececec;
   padding: 1rem;
   flex: 1; /*allow box to grow and shrink*/
@@ -99,6 +100,31 @@ body {
   }
 }
 
+/* Trusted By Section */
+.trusted-by {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* video section */
+.video {
+  background-color: #c4c4c4;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+.video-container {
+  width: 560px;
+  height: 315px;
+  margin: 0 auto;
+  background-color: black; /* Optional: background color around the video */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Header Styles */
 .header {
   /* width: 1440px; */
@@ -117,7 +143,7 @@ body {
   background-color: white;
   border-radius: 30px;
 }
-.header nav a{
+.header nav a {
   color: black;
   padding: 0.5rem;
   border-radius: 20px;
@@ -126,10 +152,9 @@ body {
   margin: 0.2rem;
 }
 
-.header a:hover{
+.header a:hover {
   text-decoration: underline;
   color: rgb(216, 192, 255);
-
 }
 .header .social a {
   margin: 0 10px;
@@ -164,11 +189,8 @@ body {
 #features {
   width: 100vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #c4c4c4;
-  padding: 2rem;
-  box-sizing: border-box;
+  background-color: #333;
+  padding: 1rem;
 }
 
 #features .feature {
@@ -177,6 +199,8 @@ body {
   padding: 1rem;
   background-color: #e4e4e4;
   text-align: center;
+  max-width: 12rem;
+  height: 20rem;
 }
 
 /* Why Choose Us Section */
@@ -185,8 +209,8 @@ body {
   /* margin: 40px 0; */
   background-color: #ededed;
 }
-#why-choose-us h2{
-  padding:  2rem;
+#why-choose-us h2 {
+  padding: 2rem;
 }
 
 #why-choose-us .reason {
@@ -197,40 +221,34 @@ body {
 
 .reason {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  width: 250px; 
+  width: 250px;
   margin: 0 auto;
 }
 
 .reason img {
-  width: 100px; 
-  height: 100px; 
-  border-radius: 50%; 
-  object-fit: cover; 
-  margin-bottom: 15px; 
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
 .reason h3 {
   font-size: 1.5em;
-  margin: 10px 0; 
+  margin: 10px 0;
 }
 
 .reason p {
   font-size: 1em;
-  color: #555; 
+  color: #555;
   margin: 10px 0;
 }
 
 /* App Features Section */
 .app-features {
-  text-align: center;
-  margin: 40px 0;
-}
-
-/* Trusted By Section */
-.trusted-by {
   text-align: center;
   margin: 40px 0;
 }
