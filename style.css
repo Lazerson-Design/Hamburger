@@ -1,0 +1,112 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  font-size: 24px;
+}
+
+.header .nav a,
+.header .social a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main Styles */
+.main {
+  padding: 20px;
+}
+
+/* Pricing Section */
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.pricing .price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Features Intro Section */
+.features-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.features .feature {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #e4e4e4;
+  text-align: center;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.why-choose-us .reason {
+  margin: 20px 0;
+}
+
+/* App Features Section */
+.app-features {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Trusted By Section */
+.trusted-by {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Call to Action Section */
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
