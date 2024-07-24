@@ -13,18 +13,36 @@ body {
 
 /* Header Styles */
 .header {
+  /* width: 1440px; */
+  /* height: 142px; */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #8f8f8f;
 }
 
 .header .logo {
   font-size: 24px;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 30px;
+}
+.header nav a{
+  color: black;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  margin: 0.2rem;
 }
 
-.header .nav a,
+.header a:hover{
+  text-decoration: underline;
+  color: rgb(216, 192, 255);
+
+}
 .header .social a {
   margin: 0 10px;
   text-decoration: none;
@@ -55,28 +73,66 @@ body {
 }
 
 /* Features Section */
-.features {
+#features {
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: #c4c4c4;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.features .feature {
+#features .feature {
   flex: 1 1 calc(33.333% - 20px);
   margin: 10px;
-  padding: 20px;
+  padding: 1rem;
   background-color: #e4e4e4;
   text-align: center;
 }
 
 /* Why Choose Us Section */
-.why-choose-us {
+#why-choose-us {
   text-align: center;
-  margin: 40px 0;
+  /* margin: 40px 0; */
+  background-color: #ededed;
+}
+#why-choose-us h2{
+  padding:  2rem;
 }
 
-.why-choose-us .reason {
+#why-choose-us .reason {
   margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reason {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  width: 250px; 
+  margin: 0 auto;
+}
+
+.reason img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-bottom: 15px; 
+}
+
+.reason h3 {
+  font-size: 1.5em;
+  margin: 10px 0; 
+}
+
+.reason p {
+  font-size: 1em;
+  color: #555; 
+  margin: 10px 0;
 }
 
 /* App Features Section */
