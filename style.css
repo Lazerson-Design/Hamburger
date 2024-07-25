@@ -102,8 +102,34 @@ body {
 
 /* Trusted By Section */
 .trusted-by {
-  text-align: center;
-  margin: 40px 0;
+  text-align: center; /* Center the text within the section */
+  padding: 40px 0; /* Add vertical padding to the section instead of margin */
+  background-color: #ececec;
+}
+
+.trusted-byh2 {
+  font-size: 1.5rem; /* Set a smaller font size for the heading */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.logos {
+  display: flex; /* Use flexbox to arrange the logos */
+  justify-content: center; /* Center the logos horizontally */
+  gap: 20px; /* Add space between the logos */
+}
+
+.logos a {
+  display: inline-block; /* Allow inline-block elements */
+  width: 80px; /* Set a fixed width for the logo containers */
+  height: 80px; /* Set a fixed height for the logo containers */
+  overflow: hidden; /* Hide any overflow content */
+  border-radius: 50%; /* Make the containers circular */
+}
+
+.logos img {
+  width: 100%; /* Make the images fill the width of their containers */
+  height: 100%; /* Make the images fill the height of their containers */
+  object-fit: cover; /* Ensure the images cover the entire container, cropping if necessary */
 }
 
 /* video section */
